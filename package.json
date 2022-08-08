@@ -1,28 +1,55 @@
 {
-  "name": "yuryescobar.com",
-  "version": "0.0.0",
-  "description": "I work as Big Data consultant",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yuryescobar/yuryescobar.github.io"
-  },
-  "homepage": "https://github.com/yuryescobar/yuryescobar.github.io",
-  "main": "gulpfile.js",
+  "name": "jenuelganawed-portfolio",
+  "version": "4.0.0",
+  "private": true,
   "scripts": {
-    "start": "gulp serve --watch",
-    "build": "gulp build"
+    "serve": "cross-env VUE_APP_BACKEND_URL=http://localhost:8000 vue-cli-service serve",
+    "build": "cross-env VUE_APP_BACKEND_URL=https://brojenuelbackend.herokuapp.com vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "author": "Brittany Chiang",
-  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "emailjs-com": "^3.2.0",
+    "register-service-worker": "^1.7.1",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
   "devDependencies": {
-    "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^7.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-eslint": "^6.0.0",
-    "gulp-imagemin": "6.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "3.0.2"
-  }
+    "@vicons/fa": "^0.12.0",
+    "@vicons/fluent": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1",
+    "vue-cli-plugin-windicss": "~1.0.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
