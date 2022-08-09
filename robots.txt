@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://vidyabhandary.github.io/sitemap.xml
-Host: https://vidyabhandary.github.io
+Sitemap: https://yuryescobar.github.io/sitemap.xml
+Host: https://yuryescobar.github.io
